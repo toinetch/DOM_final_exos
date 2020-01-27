@@ -1,0 +1,22 @@
+{
+  "name": "7exos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toinetch/DOM_final_exos.git"
+  },
+  "author": "Antoine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toinetch/DOM_final_exos/issues"
+  },
+  "homepage": "https://github.com/toinetch/DOM_final_exos#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  }
+}

@@ -1,0 +1,35 @@
+#full{
+    margin: auto;
+}
+
+#result{
+    height: 30px;
+    width: 250px;
+    background-color: black;
+}
+
+input{
+    height: 100%;
+    width: 248px;
+
+}
+
+.div{
+    height: 300px;
+    width: 250px;
+    background-color: black;
+}
+
+.colonne{
+    display: flex;
+    justify-content: space-around;
+}
+
+.chiffre{
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 30px;
+    background-color: white;
+    margin: 10px;
+}
