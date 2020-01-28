@@ -1,0 +1,17 @@
+#div5{
+    margin: auto;
+    padding-top: 30px;
+    height: 350px;
+    width: 70%;
+    background-color: lightgray;
+    display: none;
+}
+
+#div51{
+    margin-left: 20px;
+}
+
+#btnOeuf{
+    background-color: green;
+    color: white;
+}
