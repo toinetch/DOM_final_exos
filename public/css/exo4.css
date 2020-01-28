@@ -1,0 +1,47 @@
+#div4{
+    margin: auto;
+    padding-top: 30px;
+    height: 350px;
+    width: 70%;
+    background-color: lightgray;
+    display: none;
+    text-align: center;
+}
+
+#grand{
+    display: flex;
+    justify-content: space-around;
+}
+
+#div41{
+    margin-top: 20px;
+    height: 150px;
+    width: 30%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div441{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}
+
+#div42{
+    margin-top: 20px;
+    height: 150px;
+    width: 30%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div442{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    display: none;
+}
