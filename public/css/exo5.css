@@ -1,7 +1,8 @@
 #div5{
     margin: auto;
     padding-top: 30px;
-    height: 350px;
+    padding-bottom: 10px;
+    height: auto;
     width: 70%;
     background-color: lightgray;
     display: none;
@@ -14,4 +15,17 @@
 #btnOeuf{
     background-color: green;
     color: white;
+    border: none;
+}
+
+#btnEnlever{
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+#btnReset{
+    background-color: green;
+    color: white;
+    border: none;
 }

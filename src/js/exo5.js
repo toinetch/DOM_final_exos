@@ -1,5 +1,6 @@
 let btnOeuf = document.getElementById('btnOeuf');
 let btnEnlever = document.getElementById('btnEnlever');
+let btnReset = document.getElementById('btnReset');
 let place = document.getElementById('images')
 
 btnOeuf.onclick = function() {
@@ -13,4 +14,10 @@ btnOeuf.onclick = function() {
 
 btnEnlever.onclick = function() {
     place.removeChild(place.lastChild);
+}
+
+btnReset.onclick = function () {
+    while(this.lastChild != 0){
+        place.removeChild(place.lastChild);
+    }
 }
