@@ -1,0 +1,44 @@
+#div7{
+    margin: auto;
+    display: none;
+    background-color: lightgray;
+    padding: 20px 0px;
+    width: 70%;
+}
+
+#div71 {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btnToDoList{
+    height: 30px;
+    width: 100px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 30px;
+}
+
+#divInput {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#inputTDL {
+    width: 500px;
+    text-align: start;
+}
+
+#bg {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid white;
+    margin: 10px auto;
+    padding: 5px;
+    font-size: 25px;
+}

@@ -20,11 +20,10 @@
     background-color: black;
 }
 
-input{
+#inptotal{
     height: 100%;
     width: 248px;
     text-align: end;
-
 }
 
 .div{

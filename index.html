@@ -51,7 +51,7 @@
         <p>lorsque vous cliquez sur le bouton "go" le nom que vous avez ajouté dans l'input sera alors mis dans le span du h2 et l'input sera alors vidé de tout contenu</p>
         <p>Anttetion, interdiction de toucher a l'html</p>
         <input type="text" id="inpt">
-        <input type="button" value="GO" id="btn">
+        <input type="button" value="GO" id="btnGo">
     </div>
 
     <!-- Exercice 4 -->
@@ -100,7 +100,7 @@
 
         <div id="calc">
             <div id="result">
-                <input id="total" type="text">
+                <input id="inptotal" type="text">
             </div>
             <div id="row" class="div">
                 <div id="col-3" class="colonne">
@@ -131,9 +131,23 @@
         </div>
     </div>
 
+    <!-- Exercice 7 -->
     <div id="div7">
+        <div id="divInput">
+            <input type="text" name="" id="inputTDL">
+            <button id="add">Ajouter</button>
+        </div>
 
+        <div id="div71">
+            <button class="btnToDoList" id="TDL1">Toutes</button>
+            <button class="btnToDoList" id="TDL2">Complétées</button>
+            <button class="btnToDoList" id="TDL3">A faire</button>
+        </div>
+
+        <div id="divAffichage">
+        </div>
     </div>
+
     <script type="module" src="./src/js/main.js"></script>
 </body>
 </html>

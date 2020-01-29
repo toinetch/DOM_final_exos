@@ -1,6 +1,6 @@
 let input = document.getElementById('inpt')
 
-document.getElementById('inpt').onkeypress = function(event){
+input.onkeypress = function(event){
     if (event.keyCode == 13){
         entree();
     }

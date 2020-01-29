@@ -20,4 +20,5 @@ btnReset.onclick = function () {
     while(this.lastChild != 0){
         place.removeChild(place.lastChild);
     }
+    // place.innerHTML = ''; //////// AUTRE FACON
 }

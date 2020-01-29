@@ -6,7 +6,6 @@ let result = document.getElementById('resultat');
 let formulaire = document.getElementById('formu');
 
 egal1.onclick = ()=> {
-    console.log(`l'operateur est ${formulaire.value} l'input1 vaut ${input1.value} et l'input2 vaut ${input2.value}`)
     switch(formulaire.value){
         case '+':
             result.value = parseInt(input1.value) + parseInt(input2.value);
@@ -22,7 +21,6 @@ egal1.onclick = ()=> {
             break;
     }
 }
-
 
 
 // NIVEAU 2
@@ -103,3 +101,4 @@ let enter = ()=> {
     let a = total.value;
     total.value = eval(a);
 }
+
