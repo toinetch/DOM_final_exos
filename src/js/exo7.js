@@ -14,7 +14,19 @@ let add = ()=> {
     let check = document.createElement('input');
     check.type = 'checkbox';
     check.id = 'checkbox';
-    divi.id = 'bg';
+    check.onclick = function checkColor(e){
+        if (check.checked == true){
+            e.target.parentElement.classList.add('valide');
+            e.target.parentElement.classList.remove('bg');
+            e.target.parentElement.classList.add('val');
+        }
+        else{
+            e.target.parentElement.classList.add('bg');
+            e.target.parentElement.classList.remove('valide');
+            e.target.parentElement.classList.remove('val');
+        }
+    };
+    divi.classList.add('bg');
     btnEdit.id = 'edit';
     btnX.innerHTML = 'X';
     divAff.appendChild(divi);
@@ -26,10 +38,12 @@ let add = ()=> {
     divi.appendChild(btnEdit);
     inputTDL.value = "";
     
+
     btnX.addEventListener('click', ()=> {
         divi.remove();
     })
     
+
     btnEdit.addEventListener('click', ()=> {
         let inputEdit = document.createElement('input');
         divi.appendChild(inputEdit);
@@ -37,12 +51,49 @@ let add = ()=> {
         btnAjout.innerHTML = "Ok";
         divi.appendChild(btnAjout);
 
+
         btnAjout.addEventListener('click', ()=> {
             newP.innerHTML = inputEdit.value;
             btnAjout.remove();
             inputEdit.remove();
         })
     })
+
+    btnComplet.onclick = ()=> {
+        let x, i, y;
+        y = document.getElementsByClassName('valide');
+        x = document.getElementsByClassName('bg');
+        for(i = 0; i < x.length; i++){
+            x[i].style.display = 'none';
+        }
+        for(i = 0; i < y.length; i++){
+            y[i].style.display = 'flex';
+        }
+    }
+
+    btnTous.onclick = ()=> {
+        let x, i, y;
+        y = document.getElementsByClassName('valide');
+        x = document.getElementsByClassName('bg');
+        for(i = 0; i < x.length; i++){
+            x[i].style.display = 'flex';
+        }
+        for(i = 0; i < y.length; i++){
+            y[i].style.display = 'flex';
+        }
+    }
+
+    btnAfaire.onclick = ()=> {
+        let x, i, y;
+        y = document.getElementsByClassName('valide');
+        x = document.getElementsByClassName('bg');
+        for(i = 0; i < x.length; i++){
+            x[i].style.display = 'flex';
+        }
+        for(i = 0; i < y.length; i++){
+            y[i].style.display = 'none';
+        }
+    }
 }
 
 document.getElementById('inputTDL').onkeypress = function(event){
@@ -53,6 +104,3 @@ document.getElementById('inputTDL').onkeypress = function(event){
 
 btnAjouter.addEventListener('click', add);
 
-document.getElementById('checkbox').onclick = ()=> {
-    document.getElementById('bg').classList.add('valide');
-}

@@ -33,7 +33,7 @@
     text-align: start;
 }
 
-#bg {
+.bg {
     width: 60%;
     display: flex;
     justify-content: space-around;
@@ -44,5 +44,13 @@
 }
 
 .valide{
-    
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid white;
+    margin: 10px auto;
+    padding: 5px;
+    font-size: 25px;
+    background-color: green;
+    text-decoration: line-through;
 }
