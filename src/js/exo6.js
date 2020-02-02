@@ -22,9 +22,8 @@ egal1.onclick = ()=> {
     }
 }
 
-
 // NIVEAU 2
-let total = document.getElementById('total');
+let total = document.getElementById('inptotal');
 
 let zero = document.getElementById('0').onclick = ()=> {
     total.value = total.value + 0;
@@ -101,4 +100,3 @@ let enter = ()=> {
     let a = total.value;
     total.value = eval(a);
 }
-

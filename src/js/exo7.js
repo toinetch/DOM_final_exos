@@ -29,14 +29,19 @@ let add = ()=> {
     divi.classList.add('bg');
     btnEdit.id = 'edit';
     btnX.innerHTML = 'X';
-    divAff.appendChild(divi);
-    newP.innerHTML = inputTDL.value;
-    divi.appendChild(check);
-    divi.appendChild(newP);
-    divi.appendChild(btnX);
-    btnEdit.innerHTML = "edit";
-    divi.appendChild(btnEdit);
-    inputTDL.value = "";
+    if(inputTDL.value == ""){
+        alert('Veuillez entrer quelque chose avant de valider')
+    }
+    else{
+        divAff.appendChild(divi);
+        newP.innerHTML = inputTDL.value;
+        divi.appendChild(check);
+        divi.appendChild(newP);
+        divi.appendChild(btnX);
+        btnEdit.innerHTML = "edit";
+        divi.appendChild(btnEdit);
+        inputTDL.value = "";
+    }
     
 
     btnX.addEventListener('click', ()=> {
